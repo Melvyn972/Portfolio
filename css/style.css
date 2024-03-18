@@ -409,6 +409,29 @@ b, strong {
   background: #5b5b5b;
 }
 
+.project-info {
+  position: relative;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5); /* Fond noir semi-transparent */
+  color: #fff; /* Texte blanc */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-info:hover .overlay-text {
+  opacity: 1;
+}
+
 .google-map iframe {
   width: 100%;
 }
@@ -468,10 +491,10 @@ b, strong {
   justify-content: center;
 }
 
-.skills{
-  width: 100%;
-  max-width: 800px;
-  padding: 0 20px;
+.skills {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .skill-name{
